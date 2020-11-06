@@ -1,0 +1,52 @@
+<html>
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+    <h1></h1>
+    <div>
+        <canvas id="myRadarChart"></canvas>
+    </div>
+    <div class="input-groups">
+        <div class="input-group"><label>お名前</label><input type="text" id="answer_name" value="名無しさん"/></div>
+        <div class="input-group"><label>A:視覚的ワーキングメモリ</label><input type="tel" id="answer_a"/></div>
+        <div class="input-group"><label>B:聴覚的ワーキングメモリ</label><input type="tel" id="answer_b"/></div>
+        <div class="input-group"><label>C:言語操作力</label><input type="tel" id="answer_c"/></div>
+        <div class="input-group"><label>D:数操作力</label><input type="tel" id="answer_d"/></div>
+        <div class="input-group"><label>E:空間認知力</label><input type="tel" id="answer_e"/></div>
+        <div class="input-group"><label>F:処理能力</label><input type="tel" id="answer_f"/></div>
+        <div class="input-group"><label>G:適応力</label><input type="tel" id="answer_g"/></div>
+        <div class="input-group"><label>H:こだわり力</label><input type="tel" id="answer_h"/></div>
+        <div class="input-group"><label>I:創造力</label><input type="tel" id="answer_i"/></div>
+        <div class="input-group"><label>J:想像力</label><input type="tel" id="answer_j"/></div>
+        <div class="input-group"><label>K:社会技能力</label><input type="tel" id="answer_k"/></div>
+        <div class="input-group"><label>L:自己コントロール力</label><input type="tel" id="answer_l"/></div>
+        <div class="input-group"><label>M:時間力</label><input type="tel" id="answer_m"/></div>
+        <div class="input-group"><label>N:継続力</label><input type="tel" id="answer_n"/></div>
+        <div class="input-group"><label>O:遂行機能力</label><input type="tel" id="answer_o"/></div>
+        <div class="input-group"><label>P:注意力</label><input type="tel" id="answer_p"/></div>
+        <div class="input-group"><label>Q:ボディイメージ</label><input type="tel" id="answer_q"/></div>
+        <div class="input-group"><label>R:視覚的認知力</label><input type="tel" id="answer_r"/></div>
+        <div class="input-group"><label>S:聴覚認知力</label><input type="tel" id="answer_s"/></div>
+        <div class="input-group"><label>T:運動能力</label><input type="tel" id="answer_t"/></div>    
+        <div class="input-group"><button id="btn-show-result" onclick="show_resut()">結果表示</button></div>            
+    </div>
+    <!-- CDN -->
+　  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+    <script src="js/main.js"></script>
+    <style>
+        .input-groups{
+            margin-top: 2rem;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+        }
+        .input-group{
+            margin-top:1rem;
+        }
+        label{
+            margin: 1rem;
+        }
+    </style>
+</body>
+</html>
