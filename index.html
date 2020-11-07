@@ -9,9 +9,10 @@
     <div id="header">
         <h1>誰にでも才能はある。問題はその「原石」をどう見つけて磨くかだ</h1>
         <p>著書「誰にでも才能はある。問題はその「原石」をどう見つけて磨くかだ」内で行うことのできる”能力バランステスト”の結果をグラフ化することができます。</p>
-    <a href="https://amzn.to/3ex7qXx">≫ Amazonへのリンクはこちら。</a>(Amazon Unlimited会員は無料で読めます。(2020/11/07現在))
+        <a href="https://amzn.to/3ex7qXx">≫ Amazonへのリンクはこちら。</a>(Amazon Unlimited会員は無料で読めます。(2020/11/07現在))
     </div>
     <div>
+        <h2 class="chart-title">能力バランステスト結果</h2>
         <canvas id="myRadarChart"></canvas>
     </div>
     <div id="explain-context">
@@ -45,21 +46,24 @@
         <div class="input-group"><label>R:視覚的認知力</label><input type="tel" id="answer_r"/></div>
         <div class="input-group"><label>S:聴覚認知力</label><input type="tel" id="answer_s"/></div>
         <div class="input-group"><label>T:運動能力</label><input type="tel" id="answer_t"/></div>    
-        <div class="input-group"><button id="btn-show-result" onclick="show_resut()">結果表示</button></div>            
+        <div class="input-group"><button id="btn-show-result" onclick="show_resut()">結果を表示する</button></div>            
     </div>
     <!-- CDN -->
 　  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
     <script src="js/main.js"></script>
     <style>
         body{
-            background-color: #dddddd;
             color:#000000;
         }
         #header,#explain-context,#input-groups{
             
             margin-right: auto;
             margin-left:auto;
-            width: 700px;
+            width: 750px;
+        }
+
+        #explain-context{
+            margin-top: 2rem;
         }
 
         label{
@@ -74,6 +78,11 @@
         }
         .input-group{
             margin-top:1rem;
+        }
+        .chart-title{
+            text-align: center;
+            margin-top: 2rem;
+            margin-bottom: 0;
         }
     </style>
 </body>
